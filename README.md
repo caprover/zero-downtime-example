@@ -1,6 +1,5 @@
 # zero-downtime
 
-See https://github.com/nodejs/docker-node/issues/2155
 
 This is just an example app that shows how you can employ proper HEALTHCHECK in Dockerfile in order to achieve zero downtime deploys with CapRover.
 
