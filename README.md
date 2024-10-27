@@ -27,4 +27,4 @@ Password: testing
 ## Why no persistent data?
 CapRover automatically assigns "stop-first" strategy to the apps that have Persistent Data. This is a design decision to prevent data corruption on disk. 
 
-Imagine you have an app that reads and writes files in `/database`. If you start a new version of the app before you killed the old instance, there will be short period of time where two instances of the app try to read/write exact same file. This can result in major data corruption and loss. So because of this, you cannot have zero downtime deploys. This is not limited to CapRover and it applies to all that is under the sun.
+Imagine you have an app that reads and writes files in `/database`. If you start a new version of the app before you killed the old instance, there will be a short period of time where two instances of the app try to read/write **exact same file**. This can result in **major data corruption** and loss. So because of this, you cannot have zero downtime deploys. This is not limited to CapRover and it applies to all that is under the sun.
