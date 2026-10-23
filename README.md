@@ -4,7 +4,7 @@
 
 This is just an example app that shows how you can employ proper HEALTHCHECK in Dockerfile in order to achieve zero downtime deploys with CapRover.
 
-In this extreme case, even though the image is fully unresponsive for 15sec (see entrypoint.sh). You will NOT see any 502 error pages when you deploy this app. That's because Docker swarm will keep this app silent until the HEALTHCHECK starts to pass.
+In this extreme case, even though the image is fully unresponsive for 15sec (see entrypoint.sh), you will NOT see any 502 error pages when you deploy this app. That's because Docker swarm will keep this app silent until the HEALTHCHECK starts to pass.
 
 To test:
 
